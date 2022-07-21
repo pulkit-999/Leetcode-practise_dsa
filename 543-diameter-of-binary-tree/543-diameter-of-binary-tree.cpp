@@ -12,10 +12,10 @@
 class Solution {
 
 
-  private:  
+  public:
     int height(TreeNode* root,int &maxi)
     {
-          if(!root)
+          if(root==NULL)
             return 0;
          int left=height(root->left,maxi);
         int right=height(root->right,maxi);
