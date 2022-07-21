@@ -74,8 +74,8 @@ public:
            
     }
         //cout<<start<<" "<<k;
-        // if(s.size()<t.size())
-        //     return "";
+        if(s.size()<t.size())
+          return "";
         if(k==n+1)
             return "";
         string ans= s.substr(start,k);
