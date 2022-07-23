@@ -3,7 +3,7 @@ public:
     string bestHand(vector<int>& ranks, vector<char>& suits) 
     {
      unordered_map<int,int> m;
-        set<char>s;
+        unordered_set<char>s;
        // int c=count(suits.begin(),suits.end(),suits[0]);
         for(int i=0;i<5;i++)
         {
