@@ -4,15 +4,11 @@ public:
     {
      unordered_map<int,int> m;
         unordered_set<char>s;
+        int maxi=0;
        // int c=count(suits.begin(),suits.end(),suits[0]);
         for(int i=0;i<5;i++)
         {
             s.insert(suits[i]);   
-        }
-        int n=5;
-        int maxi=0;
-        for(int i=0;i<5;i++)
-        {
             m[ranks[i]]++;
             maxi=max(maxi,m[ranks[i]]);
         }
