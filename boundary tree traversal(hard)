@@ -1,0 +1,93 @@
+#include<bits/stdc++.h>
+/************************************************************
+
+    Following is the Binary Tree node structure:
+    
+    template <typename T>
+    class TreeNode {
+        public :
+        T data;
+        TreeNode<T> *left;
+        TreeNode<T> *right;
+
+        TreeNode(T data) {
+            this -> data = data;
+            left = NULL;
+            right = NULL;
+        }
+
+        ~TreeNode() {
+            if(left)
+                delete left;
+            if(right)
+                delete right;
+        }
+    };
+
+************************************************************/
+void left(TreeNode<int>* root,vector<int>&res)
+{
+    TreeNode<int>*temp=root->left;
+    while(temp!=NULL)
+    {
+        if(!(temp->left==NULL && temp->right==NULL))
+        {
+            res.push_back(temp->data);
+            
+        }
+        if(temp->left!=NULL)
+        {
+            temp=temp->left;
+        }
+        else 
+            temp=temp->right;
+    }
+    
+}
+void leafnodes(TreeNode<int>* root,vector<int>&res)
+{
+    //TreeNode<int>*temp=root;
+    
+    if(root->left==NULL && root->right==NULL)
+    {
+        res.push_back(root->data);
+       return;
+    }
+    if (root->left!=NULL)leafnodes(root->left,res);
+    if (root->right!=NULL)leafnodes(root->right,res);
+}
+void right(TreeNode<int>* root,vector<int>&res)
+{
+    TreeNode<int>*temp=root->right;
+    stack<int>s;
+    while(temp!=NULL)
+    {
+        if(!(temp->left==NULL && temp->right==NULL))
+        {
+            s.push(temp->data);
+        }
+        if(temp->right!=NULL)
+        {
+            temp=temp->right;
+        }
+        else 
+            temp=temp->left;
+    }
+    while(!s.empty())
+    {
+        int k=s.top();
+        res.push_back(k);
+        s.pop();
+    }
+}
+vector<int> traverseBoundary(TreeNode<int>* root){
+    vector<int>res;
+    if(!root)
+        return res;
+    if(!((root->left==NULL && root->right==NULL)))
+        res.push_back(root->data);
+    left(root,res);
+    leafnodes(root,res);
+    right(root,res);
+    return res;
+}
