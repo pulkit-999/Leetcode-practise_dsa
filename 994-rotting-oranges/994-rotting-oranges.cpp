@@ -40,7 +40,7 @@ public:
                     if(grid[i][j]==1)
                     {
                     grid[i][j]=2;
-                    q.push({i,j});
+                    q.push({i,j});    //push oranges if they are made rotten
                     }
                 }
             }
