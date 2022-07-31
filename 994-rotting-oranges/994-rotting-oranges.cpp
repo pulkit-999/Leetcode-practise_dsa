@@ -35,10 +35,14 @@ public:
             {
                 int i=x+dx[d];
                 int j=y+dy[d];
-                if(i<0 ||j<0 ||i>=grid.size() ||j>=grid[0].size() ||grid[i][j]!=1)
-                    continue;
+                if(i>=0 &&j>=0 &&i<grid.size()&&j<grid[0].size())
+                {
+                    if(grid[i][j]==1)
+                    {
                     grid[i][j]=2;
                     q.push({i,j});
+                    }
+                }
             }
                 }
             if(!q.empty())
