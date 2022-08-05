@@ -5,7 +5,7 @@ public:
         int n=nums.size(), count=0;
         if(index>=n || sum>target)
             return 0;
-        if(dp[index][sum]>=0)
+        if(dp[index][sum]!=-1)
             return dp[index][sum];
         if(sum==target)
             return dp[index][sum]=1;
