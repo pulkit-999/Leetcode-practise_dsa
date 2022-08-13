@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int solve(int step,int value,int copy,int n)
+    int solve(int step,int value,int copy,int n,vector<vector<int>>&dp)
     {
         if(step>n||value>n)
         {
@@ -8,12 +8,16 @@ public:
         }
         if(value==n)
             return step;
-        return min(solve(step+1,copy+value,copy,n),solve(step+2,2*value,value,n));
+        if(dp[step][value]!=-1)
+            return dp[value][copy];
+    return dp[value][copy] =min(solve(step+1,copy+value,copy,n,dp),solve(step+2,2*value,value,n,dp));
+         
     }
     int minSteps(int n) 
     {
         if(n==1)
             return 0;
-    return solve(1,1,1,n);
+        vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
+    return solve(1,1,1,n,dp);
     }
 };
