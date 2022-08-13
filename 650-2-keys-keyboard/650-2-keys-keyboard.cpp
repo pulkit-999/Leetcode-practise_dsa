@@ -9,8 +9,8 @@ public:
         if(value==n)
             return step;
         if(dp[step][value]!=-1)
-            return dp[value][copy];
-    return dp[value][copy] =min(solve(step+1,copy+value,copy,n,dp),solve(step+2,2*value,value,n,dp));
+            return dp[step][value];
+    return dp[step][value] =min(solve(step+1,copy+value,copy,n,dp),solve(step+2,2*value,value,n,dp));
          
     }
     int minSteps(int n) 
