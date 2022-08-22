@@ -19,7 +19,7 @@ public:
         while(!q.empty())
         {
              int el=q.front();
-            ans.push_back(el);
+            ans.insert(ans.begin(),el);
             q.pop();
             for(auto y:graph[el])
             {
@@ -36,7 +36,7 @@ public:
                 return ans;
                 }
         }
-        reverse(ans.begin(),ans.end());
+        //reverse(ans.begin(),ans.end());
         return ans;
     }
 };
