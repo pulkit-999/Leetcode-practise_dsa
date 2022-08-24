@@ -10,7 +10,7 @@ public:
         {
             graph[flights[i][0]].push_back({flights[i][1],flights[i][2]});
         }
-        pq.push({-1,{0,src}});
+        pq.push({0,{0,src}});
         dis[src]=0;
         
         while(!pq.empty())
@@ -20,7 +20,7 @@ public:
             int stops=pq.top().first;
              pq.pop();
              
-            if (stops+1>k)
+            if (stops>k)
                     continue;
             for(auto it: graph[prev])
             {
