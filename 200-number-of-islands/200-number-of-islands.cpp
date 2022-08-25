@@ -1,32 +1,50 @@
 class Solution {
 public:
-   int solve(vector<vector<char>>& grid,int i,int j)
+   void bfs(vector<vector<char>> grid,vector<vector<int>>&vis,int row,int col)
+{
+       int d[4][2] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    vis[row][col]=1;
+    queue<pair<int,int>>q;
+    q.push({row,col});
+    while(!q.empty())
     {
-        if(i<0|| j<0 ||i>=grid.size() ||j>=grid[0].size()||grid[i][j]=='0')
-            return 0;
-         grid[i][j]='0';
-        solve(grid,i+1,j);
-        solve(grid,i-1,j);
-        solve(grid,i,j-1);
-        solve(grid,i,j+1);
-        return 1;
-    }
-    
-    int numIslands(vector<vector<char>>& grid) 
-    {
-        int m=grid.size();
-        int n=grid[0].size();
-        int ans=0;
-        if(grid.size()==0)
-            return 0;
-        for(int i=0;i<grid.size();i++)
-        {
-            for(int j=0;j<grid[0].size();j++)
-            {
-                if(grid[i][j]=='1')
-                    ans+=solve(grid,i,j);
+        int r=q.front().first;
+        int c=q.front().second;
+           q.pop();
+      for(int k=0;k<4;k++)
+      {
+        
+                int nr=r+d[k][0];
+                int nc=c+d[k][1];
+                if(nr>=0&&nr<grid.size()&&nc>=0&&nc<grid[0].size()&&grid[nr][nc]=='1' && !(vis[nr][nc]))
+                {
+                    vis[nr][nc]=1;
+                    q.push({nr,nc});
+                }
             }
         }
-       return ans;
-    }
+        
+    
+}
+
+int numIslands(vector<vector<char>> grid)
+{
+    int n=grid.size();
+    int m=grid[0].size();
+ vector<vector<int>>vis(n,vector<int>(m,0));
+ int count=0;
+ for(int i=0;i<n;i++)
+ {
+     for(int j=0;j<grid[0].size();j++)
+     {
+         if(!vis[i][j]&&grid[i][j]=='1')
+     {
+         count++;
+         bfs(grid,vis,i,j);
+         
+     }
+     }
+ }
+ return count;
+}
 };
