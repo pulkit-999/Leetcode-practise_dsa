@@ -4,19 +4,13 @@ public:
     const int mod=1e9+7;
     int countPaths(int n, vector<vector<int>>& roads)
     {
-        vector<vector<long long>>graph[n];
-        // for(int i=0;i<n;i++)
-        // {
-        //     graph[roads[i][0]].push_back({roads[i][1],roads[i][2]});
-        //     graph[roads[i][1]].push_back({roads[i][0],roads[i][2]});
-        // }
-        for(vector<int> a:roads){
-            ll u = a[0];
-            ll v = a[1];
-            ll wt = a[2];
-            graph[u].push_back({v,wt});
-            graph[v].push_back({u,wt});
+        vector<pair<ll ,ll>>graph[n];
+        for(auto x:roads)
+        {
+            graph[x[0]].push_back({x[1],x[2]});
+            graph[x[1]].push_back({x[0],x[2]});
         }
+       
       
     vector<long long>dis(n,LONG_MAX),ways(n,0);
         ways[0]=1;
@@ -30,15 +24,15 @@ public:
             auto dist=pq.top().first;
             pq.pop();
            
-            for(auto arr : graph[prev]){
-                ll distt = dist + arr[1];
-                ll next = arr[0];
+            for(auto it : graph[prev]){
+                ll distt = dist + it.second;
+                ll next = it.first;
                 if(dis[next]>distt)
                 {
-                   
+                    ways[next]=ways[prev];
                     dis[next]=distt;
                     pq.push({dis[next],next});
-                     ways[next]=ways[prev];
+                    
                 }
                 else if(distt==dis[next])
                 {
