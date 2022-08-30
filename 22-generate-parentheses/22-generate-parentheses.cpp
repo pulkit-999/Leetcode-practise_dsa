@@ -13,14 +13,14 @@ public:
             ans.push_back(s);
             return;
         }
-        else{
+        
         ds.push_back("(");
         solve(opening-1,closing,ans,ds);
         ds.pop_back();
         ds.push_back(")");
         solve(opening,closing-1,ans,ds);
         ds.pop_back();
-        }
+        
     }
     vector<string> generateParenthesis(int n) {
         vector<string>ans;
