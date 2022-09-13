@@ -13,12 +13,9 @@ public:
         }
         for(auto x:m)
         {
-            for(auto y:x.second)
-            {
-                res.push_back(y);
-            }
-            ans.push_back(res);
-            res.clear();
+          
+            ans.push_back(x.second);
+            
         }
         return ans;
     }
