@@ -7,13 +7,13 @@ public:
         if(dp[i][j]!=-1e9)
             return dp[i][j];
         int front=solve(dp,nums,multipliers,i+1,j+1,n)+nums[i]*multipliers[j];
-        int back=solve(dp,nums,multipliers,i,j+1,n)+nums[n-1-(j-i)]*multipliers[j];
+        int back=solve(dp,nums,multipliers,i,j+1,n)+nums[n-(j-i)]*multipliers[j];
         return dp[i][j]=max(front,back);
     }
     int maximumScore(vector<int>& nums, vector<int>& multipliers)
     {
         int m=multipliers.size();
        vector<vector<int>>dp(m+1,vector<int>(m+1,-1e9));
-       return solve(dp,nums,multipliers,0,0,nums.size());
+       return solve(dp,nums,multipliers,0,0,nums.size()-1);
     }
 };
