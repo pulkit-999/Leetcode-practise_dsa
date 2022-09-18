@@ -13,7 +13,7 @@ struct Node{
     }
     bool containskey(char ch)
     {
-        return (links[ch-'a'])!=NULL;
+        return (links[ch-'a'])==NULL;
     }
         
         void setend()
@@ -27,7 +27,7 @@ struct Node{
 };
 class Trie {
 public:
-    Node *root;
+    Node* root;
     Trie() {
         root=new Node();
     }
@@ -37,7 +37,7 @@ public:
           Node* node=root;
         for(int i=0;i<word.size();i++)
         {
-            if(!node->containskey(word[i]))
+            if(node->containskey(word[i]))
             {
                 node->put(word[i], new Node());
             }
@@ -51,7 +51,7 @@ public:
           Node* node=root;
     for(int i=0;i<word.size();i++)
         {
-            if(!node->containskey(word[i]))
+            if(node->containskey(word[i]))
             {
                 return false;
             }
@@ -65,7 +65,7 @@ public:
         Node* node=root;
         for(int i=0;i<prefix.size();i++)
         {
-            if(!node->containskey(prefix[i]))
+            if(node->containskey(prefix[i]))
             {
                 return false;
             }
