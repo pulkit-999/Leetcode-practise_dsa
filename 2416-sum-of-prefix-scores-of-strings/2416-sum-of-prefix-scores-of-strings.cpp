@@ -2,7 +2,7 @@ struct Node{
     
    Node* links[26];
     int cp=0;
-    int ew=0;
+
     void put(char ch,Node* node)
     {
         links[ch-'a']=node;
@@ -19,18 +19,12 @@ struct Node{
     {
         cp++;
     }
-     void incend()
-    {
-        ew++;
-    }
+   
     int prefix()
     {
         return cp;
     }
-    bool isend()
-    {
-        return ew;
-    }
+  
     
 };
 
@@ -57,7 +51,6 @@ public:
         node=node->get(word[i]);
           node->incpre();
     }
-        node->incend();
 }
     int  count(string &word)
 {
