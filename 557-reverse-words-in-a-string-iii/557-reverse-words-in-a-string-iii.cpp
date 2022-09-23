@@ -2,27 +2,31 @@ class Solution {
 public:
     string reverseWords(string s)
     {
-     string k="";
-        s=s+".";
-        string w="";
+     string ans;
+        stack<char>st;
         for(int i=0;i<s.size();i++)
         {
-            if(s[i]!=' ' && s[i]!='.')
+          if(s[i]==' ')
+          {
+              while(!st.empty())
+              {
+                  ans.push_back(st.top());
+                  st.pop();
+              }
+              ans.push_back(' ');
+              
+          }
+            else 
             {
-                w=s[i]+w;
+                st.push(s[i]);
             }
-            else if(s[i]=='.')
-            {
-                k=k+w;
-                w="";
-            }
-            else
-            {
-                k=k+w+" ";
-                w="";
-            }
+    }
+        while(!st.empty())
+        {
+            ans.push_back(st.top());
+            st.pop();
             
         }
-        return k;
+        return ans;
     }
 };
