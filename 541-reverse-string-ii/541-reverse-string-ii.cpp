@@ -2,7 +2,7 @@ class Solution {
 public:
     string reverseStr(string s, int k) 
     {
-        string ans="";
+        
         int rem=s.size();
         int n=s.size();
      while(rem>0)
