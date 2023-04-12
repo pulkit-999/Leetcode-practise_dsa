@@ -15,7 +15,9 @@ public:
 	{
 	    string p=a.append(b);
 	      string q=b.append(a);
-	    return p.compare(q) > 0 ? 1 : 0;
+	    if(p>=q)
+	    return true;
+	    return false;
 	}
 	string printLargest(vector<string> &arr) {
 	    sort(arr.begin(),arr.end(),comp);
