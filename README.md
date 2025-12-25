@@ -31,3 +31,22 @@ Solutions to some of the important questions asked in interviews by various comp
 |  |
 | ------- |
 | [3438-peaks-in-array](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/3438-peaks-in-array) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2289-steps-to-make-array-non-decreasing](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2289-steps-to-make-array-non-decreasing) |
+## Linked List
+|  |
+| ------- |
+| [2289-steps-to-make-array-non-decreasing](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2289-steps-to-make-array-non-decreasing) |
+## Stack
+|  |
+| ------- |
+| [2289-steps-to-make-array-non-decreasing](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2289-steps-to-make-array-non-decreasing) |
+## Monotonic Stack
+|  |
+| ------- |
+| [2289-steps-to-make-array-non-decreasing](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2289-steps-to-make-array-non-decreasing) |
+<!---LeetCode Topics End-->
