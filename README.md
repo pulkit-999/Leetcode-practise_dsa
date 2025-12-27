@@ -38,6 +38,7 @@ Solutions to some of the important questions asked in interviews by various comp
 | ------- |
 | [0503-next-greater-element-ii](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0503-next-greater-element-ii) |
 | [2289-steps-to-make-array-non-decreasing](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2289-steps-to-make-array-non-decreasing) |
+| [2865-beautiful-towers-i](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2865-beautiful-towers-i) |
 ## Linked List
 |  |
 | ------- |
@@ -48,12 +49,14 @@ Solutions to some of the important questions asked in interviews by various comp
 | [0402-remove-k-digits](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0402-remove-k-digits) |
 | [0503-next-greater-element-ii](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0503-next-greater-element-ii) |
 | [2289-steps-to-make-array-non-decreasing](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2289-steps-to-make-array-non-decreasing) |
+| [2865-beautiful-towers-i](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2865-beautiful-towers-i) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [0402-remove-k-digits](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0402-remove-k-digits) |
 | [0503-next-greater-element-ii](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0503-next-greater-element-ii) |
 | [2289-steps-to-make-array-non-decreasing](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2289-steps-to-make-array-non-decreasing) |
+| [2865-beautiful-towers-i](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2865-beautiful-towers-i) |
 ## String
 |  |
 | ------- |
