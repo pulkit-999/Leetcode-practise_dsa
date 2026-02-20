@@ -47,6 +47,7 @@ Solutions to some of the important questions asked in interviews by various comp
 ## Stack
 |  |
 | ------- |
+| [0394-decode-string](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0402-remove-k-digits) |
 | [0503-next-greater-element-ii](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0503-next-greater-element-ii) |
 | [2289-steps-to-make-array-non-decreasing](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/2289-steps-to-make-array-non-decreasing) |
@@ -63,9 +64,14 @@ Solutions to some of the important questions asked in interviews by various comp
 ## String
 |  |
 | ------- |
+| [0394-decode-string](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0402-remove-k-digits) |
 ## Greedy
 |  |
 | ------- |
 | [0402-remove-k-digits](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0402-remove-k-digits) |
+## Recursion
+|  |
+| ------- |
+| [0394-decode-string](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0394-decode-string) |
 <!---LeetCode Topics End-->
