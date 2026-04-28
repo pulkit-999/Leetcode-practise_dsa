@@ -64,6 +64,7 @@ Solutions to some of the important questions asked in interviews by various comp
 ## String
 |  |
 | ------- |
+| [0187-repeated-dna-sequences](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0187-repeated-dna-sequences) |
 | [0394-decode-string](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0402-remove-k-digits) |
 ## Greedy
@@ -74,4 +75,24 @@ Solutions to some of the important questions asked in interviews by various comp
 |  |
 | ------- |
 | [0394-decode-string](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0394-decode-string) |
+## Hash Table
+|  |
+| ------- |
+| [0187-repeated-dna-sequences](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0187-repeated-dna-sequences) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0187-repeated-dna-sequences](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0187-repeated-dna-sequences) |
+## Sliding Window
+|  |
+| ------- |
+| [0187-repeated-dna-sequences](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0187-repeated-dna-sequences) |
+## Rolling Hash
+|  |
+| ------- |
+| [0187-repeated-dna-sequences](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0187-repeated-dna-sequences) |
+## Hash Function
+|  |
+| ------- |
+| [0187-repeated-dna-sequences](https://github.com/pulkit-999/Leetcode-practise_dsa/tree/master/0187-repeated-dna-sequences) |
 <!---LeetCode Topics End-->
